@@ -183,7 +183,7 @@ async def save_rclone_conf_f(client, message):
     chat_type = message.chat.type
     r_clone_conf_uri = None
     if chat_type in ["private", "bot", "group"]:
-        r_clone_conf_uri = f"https://t.me/PublicLeech/{message.chat.id}/{message.reply_to_message.message_id}"
+        r_clone_conf_uri = f"https://t.me/cyberwordk/{message.chat.id}/{message.reply_to_message.message_id}"
     elif chat_type in ["supergroup", "channel"]:
         if message.chat.username:
             r_clone_conf_uri = "please DO NOT upload confidential credentials, in a public group."
